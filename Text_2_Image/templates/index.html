@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Image Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Text-to-Image Generator</h1>
+    <form action="/generate_image" method="post">
+        <label for="text">Enter Text:</label><br>
+        <input type="text" id="text" name="text"><br><br>
+        <input type="submit" value="Generate Image">
+    </form>
+</body>
+</html>
